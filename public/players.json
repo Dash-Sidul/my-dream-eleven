@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "name": "Virat Kohli",
+    "country": "India",
+    "image": "https://i.ibb.co.com/V0HbYVwV/164-compress.avif",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "price": 120,
+    "type": "Batter",
+    "rating": 92
+  },
+  {
+    "id": 2,
+    "name": "Babar Azam",
+    "country": "Pakistan",
+    "image": "https://i.ibb.co.com/RGNWZGLq/images.jpg",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Occasional off break",
+    "price": 110,
+    "type": "Batter",
+    "rating": 90
+  },
+  {
+    "id": 3,
+    "name": "Steve Smith",
+    "country": "Australia",
+    "image": "https://i.ibb.co.com/jpKFyBC/images-1.jpg",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Leg break",
+    "price": 105,
+    "type": "Allrounder",
+    "rating": 88
+  },
+  {
+    "id": 4,
+    "name": "Joe Root",
+    "country": "England",
+    "image": "https://i.ibb.co.com/Wvy7ZnJ5/images-2.jpgg",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm off break",
+    "price": 100,
+    "type": "Allrounder",
+    "rating": 87
+  },
+  {
+    "id": 5,
+    "name": "Kane Williamson",
+    "country": "New Zealand",
+    "image": "https://i.ibb.co.com/5Xb3ZDnr/kane-williwamson.avif",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm off break",
+    "price": 98,
+    "type": "Batter",
+    "rating": 89
+  },
+  {
+    "id": 6,
+    "name": "Rohit Sharma",
+    "country": "India",
+    "image": "https://i.ibb.co.com/FqKK9ZNs/rohit-sharma-14-10-2023.png",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm off break",
+    "price": 115,
+    "type": "Batter",
+    "rating": 91
+  },
+  {
+    "id": 7,
+    "name": "Shakib Al Hasan",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co.com/WpVs9gCm/sakib.jpg",
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Slow left-arm orthodox",
+    "price": 108,
+    "type": "Allrounder",
+    "rating": 93
+  },
+  {
+    "id": 8,
+    "name": "Jos Buttler",
+    "country": "England",
+    "image": "https://i.ibb.co.com/HfRzn19s/buttler.webp",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Wicket-keeper",
+    "price": 112,
+    "type": "Batter",
+    "rating": 89
+  },
+  {
+    "id": 9,
+    "name": "David Warner",
+    "country": "Australia",
+    "image": "https://i.ibb.co.com/HTrPB0s3/warner.jpg",
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Right-arm leg break",
+    "price": 107,
+    "type": "Batter",
+    "rating": 88
+  },
+  {
+    "id": 10,
+    "name": "Hardik Pandya",
+    "country": "India",
+    "image": "https://i.ibb.co.com/8DZv8JQH/hardik.avif",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm fast-medium",
+    "price": 102,
+    "type": "Allrounder",
+    "rating": 86
+  },
+  {
+    "id": 11,
+    "name": "Trent Boult",
+    "country": "New Zealand",
+    "image": "https://i.ibb.co.com/jkVqXdgB/tent-bolt.jpg",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Left-arm fast",
+    "price": 95,
+    "type": "Bowler",
+    "rating": 90
+  },
+  {
+    "id": 12,
+    "name": "Mustafizur Rahman",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co.com/MxP3d4q3/mustafiz.jpg",
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Left-arm fast-medium",
+    "price": 97,
+    "type": "Bowler",
+    "rating": 87
+  }
+]
