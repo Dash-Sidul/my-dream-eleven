@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+
 import logo from '../assets/logo.png'
 import coin from '../assets/icons8-coin-48.png'
 

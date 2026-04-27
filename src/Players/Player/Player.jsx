@@ -1,8 +1,10 @@
 import React from "react";
 
-const Player = ({ player ,handleChosePlayer ,active, }) => {
-  const { id, name, country, price, battingStyle, bowlingStyle, image, type, rating} =
+const Player = ({ player ,handleChosePlayer ,active, purchasePlayer, setPurchasePlayer, chosenPlayer}) => {
+  const { name, country, price, battingStyle, bowlingStyle, image, type, rating} =
     player;
+
+    // setPurchasePlayer([...purchasePlayer , player])
   return (
     <div className="">
       <div className="m-4 ml-4">
@@ -32,7 +34,7 @@ const Player = ({ player ,handleChosePlayer ,active, }) => {
               </div>
               <div className="flex justify-between w-10/12 mx-auto pt-3">
                 <h1 className="text-l font-semibold">Price : {price}</h1>
-                <button className="btn font-bold" onClick={() => handleChosePlayer(price)}>{active? "Chosen": "Choose Player"}</button>
+                <button className="btn font-bold" onClick={() =>{ handleChosePlayer(price,player); setPurchasePlayer([...purchasePlayer , player])} }>{active? "Chosen": "Choose Player"}</button>
               </div>
             </div>
           </div>

@@ -9,19 +9,22 @@ import Players from "./Players/Players";
 import SelectedPlayer from "./SelectedPlayer/SelectedPlayer";
 
 function App() {
-
+  const [purchasePlayer, setPurchasePlayer] = useState([])
   const [selected, setSelected] = useState(false)
  const [available, setAvailable] = useState(true)
   const [chosenPlayer, setChosenPlayer] = useState(0)
   const [active, setActive] = useState (false)
   const [coinCount, setCoinCount] = useState(1200);
   const [players, setPlayers] = useState([]) ;
+  const [deletedPlayer, setDeletedPlayer] = useState([])
+  const [block, setBlock] = useState(true)
+  // console.log(purchasePlayer);
   
   // fetch("/public/players.json")
   //       .then( res => res.json())
   //       .then(data=> setPlayers(data))
   useEffect(() => {
-  fetch("/public/players.json")
+  fetch("/players.json")
     .then(res => res.json())
     .then(data => setPlayers(data))
 }, []);
@@ -48,11 +51,19 @@ function App() {
     console.log('selected btn clicked');
     setSelected(!false)
     setAvailable(!true)
+    setBlock(false)
   }
   const handleAvailable = () =>{
     console.log('selected btn clicked');
     setSelected(false)
     setAvailable(true)
+   setBlock(true)
+  }
+  const handleDelete = (p) =>{
+    console.log(p);
+    const remaining = purchasePlayer.filter(card => card.id !== p.id)
+    setPurchasePlayer(remaining)
+    setChosenPlayer(chosenPlayer -1)
   }
 
   return (
@@ -83,11 +94,23 @@ function App() {
               selected = {selected}
               handleSelected = {handleSelected}
               handleAvailable = {handleAvailable}
+              purchasePlayer = {purchasePlayer}
+              setPurchasePlayer = {setPurchasePlayer}
+              block = {block}
+              setBlock = {setBlock}
             ></Players>
 
           </Suspense>
         }
-        <SelectedPlayer chosenPlayer = {chosenPlayer}></SelectedPlayer>
+        <div className={`${available ? 'hidden': ''}`}>
+          <SelectedPlayer chosenPlayer = {chosenPlayer}
+        purchasePlayer = {purchasePlayer}
+        deletedPlayer = {deletedPlayer}
+        setDeletedPlayer = {setDeletedPlayer}
+        handleDelete = {handleDelete}
+        chosenPlayer ={chosenPlayer}
+        ></SelectedPlayer>
+        </div>
           <ToastContainer />
       </div>
     </div>
